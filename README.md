@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![<tobiaseisenschenk>](https://circleci.com/gh/tobiaseisenschenk/ML-Microservice_on_Kubernetes-playground.svg?style=svg)](https://github.com/tobiaseisenschenk/ML-Microservice_on_Kubernetes-playground)
+
 
 ## Project Overview
 
@@ -25,18 +26,18 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Create a virtualenv and activate it - Run `make setup`
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
 
-1. Standalone:  `python app.py`
+1. Standalone:  `python3 app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
+* Setup and Configure Kubernetes locally (e.g. with hypervisor as driver)
 * Create Flask app in Container
 * Run via kubectl
