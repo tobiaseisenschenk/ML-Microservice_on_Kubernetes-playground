@@ -1,18 +1,10 @@
 #!/usr/bin/env bash
 
 # This tags and uploads an image to Docker Hub
-
-# Step 1:
-# This is your Docker ID/path
-# dockerpath=<>
-
-# Step 2
+dockerpath="tje512/ml-api"
 # Run the Docker Hub container with kubernetes
-
-
-# Step 3:
+kubectl run ml-api --image=$dockerpath --generator=run-pod/v1 --port=8000 --labels app=ml-api
 # List kubernetes pods
-
-# Step 4:
+kubectl get pods
 # Forward the container port to a host
-
+kubectl port-forward ml-api 8000:80

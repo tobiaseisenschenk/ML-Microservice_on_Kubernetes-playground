@@ -2,14 +2,9 @@
 # This file tags and uploads an image to Docker Hub
 
 # Assumes that an image is built via `run_docker.sh`
-
-# Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
-
-# Step 2:  
+# dockerpath=tje512/ml-api
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-
-# Step 3:
 # Push image to a docker repository
+docker push tje512/ml-api

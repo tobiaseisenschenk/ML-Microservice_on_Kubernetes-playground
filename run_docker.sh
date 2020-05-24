@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Build image and add a descriptive tag
-docker build --tag=api .
+docker build --tag=tje512/ml-api .
 # List docker images
 docker image ls
 # Run flask app
